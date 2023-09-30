@@ -1,0 +1,34 @@
+package com.spaceBooking.service;
+
+
+
+import java.text.ParseException;
+
+import com.spaceBooking.dao.OicDao;
+import com.spaceBooking.model.Applicant;
+
+public class OicService {
+
+private OicDao oicDao;
+	
+	public OicService() {
+		super();
+		this.oicDao = new OicDao();
+	}
+	String rejectedStatus = "Rejected";	
+	String approvedStatus = "Approved";
+	long millis = System.currentTimeMillis();
+	java.sql.Date oicFollowUpdate = new java.sql.Date(millis);
+	public void updateRejectedStatus(Applicant app) throws ParseException {		
+        app.setApprovalStatus(rejectedStatus);		
+		oicDao.updateAppStatus(app,oicFollowUpdate);
+		
+		
+	}
+	public void updateApprovalStatus(Applicant applicant) {
+		applicant.setApprovalStatus(approvedStatus);
+		
+		oicDao.updateApprovalStatus(applicant,oicFollowUpdate);
+		
+	}
+}
