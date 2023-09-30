@@ -1,0 +1,96 @@
+.Title {
+	font-size: 18px;
+	color: brown;
+	font-weight: bold;
+}
+
+.RightAlign {
+	text-align: center;
+}
+
+.ControlError {
+	border: 2px solid red;
+}
+
+.ControlErrorMessage {
+	color: red;
+	font-weight: 600;
+}
+
+.Level {
+	padding: 20px;
+}
+
+.Slot {
+	cursor: pointer;
+	border: 2px solid gray;
+	margin: 5px;
+	height: 100px;
+	width: 100px;
+	padding: 40px;
+}
+
+.Free {
+	background-color: white;
+	color: black;
+	font-weight: 600;
+	text-align: center;
+}
+
+.Booked {
+	background-color: #FFC0CB;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+}
+
+.BookedByUser {
+	background-color: green;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+}
+
+.Blocked {
+	background-color: gray;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+}
+
+.ListHeaderRow {
+	border: 2px solid black;
+}
+
+.ListHeaderCol {
+	color: Blue;
+	border: 2px solid black;
+	width: 200px;
+	text-align: center;
+}
+
+.ListBodyRow {
+	border: 2px solid black;
+}
+
+.ListBodyCol {
+	border: 2px solid black;
+	width: 200px;
+	text-align: Left;
+}
+
+.tablinks {
+	text-align: center;
+	width: 200px;
+	border: 1px solid gray;
+	background-color: lightgray;
+	border: 1px solid black;
+	width: 200px;
+	font-weight: 20px;
+	cursor: pointer;
+}
+
+.tablinksActive {
+	background-color: green !important;
+	color: white;
+}
